@@ -2,12 +2,11 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 
 //import 'bootswatch/dist/vapor/bootstrap.min.css';
-import 'simpledotcss/simple.min.css'
+//import 'simpledotcss/simple.min.css'
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-//import Button from "react-bootstrap/Button"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -38,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
           return (
             <li key={post.fields.slug}>
               <article
-                className=""
+                className="post-list-item"
                 itemScope
                 itemType="http://schema.org/Article"
               >

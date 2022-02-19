@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className=""
+        className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
       >
@@ -34,7 +34,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <Bio />
         </footer>
       </article>
-      <nav className="">
+      <nav className="blog-post-nav">
         <ul
           style={{
             display: `flex`,

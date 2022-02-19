@@ -124,7 +124,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `ubuntu`,
+          `dosis`,
           `arvo`
         ],
         display: 'swap'
