@@ -143,8 +143,10 @@ module.exports = {
         },
         pluginConfig: {
           head: false,
+          exclude: [`static/admin/**`]
         }
       }
-    }
+    },
+    `gatsby-plugin-netlify-cms`
   ],
 }
