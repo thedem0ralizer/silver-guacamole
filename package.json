@@ -6,6 +6,7 @@
   "author": "thedem0ralizer <thedem0ralizer@protonmail.ch>",
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "bootswatch": "^5.1.3",
     "dotenv": "^16.0.0",
     "gatsby": "^4.7.2",
     "gatsby-plugin-feed": "^4.7.0",
@@ -30,7 +31,8 @@
     "react": "^17.0.1",
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "simpledotcss": "^2.0.4"
   },
   "devDependencies": {
     "prettier": "^2.5.1"
