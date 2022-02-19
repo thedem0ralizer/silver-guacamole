@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "crypto-covid-fans",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "content for humans",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "thedem0ralizer <thedem0ralizer@protonmail.ch>",
   "dependencies": {
     "gatsby": "^4.7.2",
     "gatsby-plugin-feed": "^4.7.0",
@@ -35,16 +32,8 @@
   "devDependencies": {
     "prettier": "^2.5.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
   "license": "0BSD",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
