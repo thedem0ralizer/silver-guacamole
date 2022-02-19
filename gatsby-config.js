@@ -122,5 +122,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `ubuntu`,
+          `arvo`
+        ],
+        display: 'swap'
+      }
+    }
   ],
 }

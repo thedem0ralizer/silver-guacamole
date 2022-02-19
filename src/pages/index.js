@@ -34,7 +34,7 @@ const BlogIndex = ({ data, location }) => {
           return (
             <li key={post.fields.slug}>
               <article
-                className="post-list-item"
+                className=""
                 itemScope
                 itemType="http://schema.org/Article"
               >
