@@ -4,8 +4,6 @@ import { Link, graphql } from "gatsby"
 //import 'bootswatch/dist/vapor/bootstrap.min.css';
 //import 'simpledotcss/simple.min.css'
 
-import Bio from "../components/bio"
-import MortgageCalculator from "../components/mortgage-calc"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -17,7 +15,6 @@ const BlogIndex = ({ data, location }) => {
     return (
       <Layout location={location} title={siteTitle}>
         <Seo title="All posts" />
-        <Bio />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
@@ -30,8 +27,6 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-      <Bio />
-      <MortgageCalculator />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
