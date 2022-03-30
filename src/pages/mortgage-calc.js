@@ -1,9 +1,15 @@
 import * as React from "react"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import MortgageCalculator from "../components/calc"
 
-const MortgageCalculator = () => {
+const MortgageCalculatorPage = ({ location }) => {
     return (
-        "mortgage calulator here"
+        <Layout location={location}>
+            <Seo title="Mortgage" />
+            <MortgageCalculator />
+        </Layout>
     )
 }
 
-export default MortgageCalculator
+export default MortgageCalculatorPage
