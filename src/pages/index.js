@@ -5,6 +5,7 @@ import { Link, graphql } from "gatsby"
 //import 'simpledotcss/simple.min.css'
 
 import Bio from "../components/bio"
+import MortgageCalculator from "../components/mortgage-calc"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -30,6 +31,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
+      <MortgageCalculator />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
