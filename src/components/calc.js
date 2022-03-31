@@ -36,29 +36,23 @@ export class MortgageCalculator extends Component {
                 <h3>Mortgage Calculator</h3>
                 <div>
                     <div>
-                        <p>
-                            Sale price:{' '}
-                            <span>
-                                {this.state.sale_price}
-                            </span>
-                        </p>
                         <input
                             name="sale_price"
                             type='range'
-                            min='0'
-                            max='1000000'
-                            step='5000'
+                            min='100001'
+                            max='1005033'
+                            step='5033'
                             value={this.state.sale_price}
                             onChange={this.onChange}
                         />
-                    </div>
-                    <div>
                         <p>
-                            Down payment:{' '}
+                            Sale price:{' '}
                             <span>
-                                {this.state.amount_down}
+                                ${this.state.sale_price}
                             </span>
                         </p>
+                    </div>
+                    <div>
                         <input
                             name="amount_down"
                             type='range'
@@ -68,49 +62,47 @@ export class MortgageCalculator extends Component {
                             value={this.state.amount_down}
                             onChange={this.onChange}
                         />
-                    </div>
-                    <div>
                         <p>
-                            Amount to borrow:{' '}
+                            Down payment:{' '}
                             <span>
-                                {this.state.amount_financed} ({parseInt(this.state.amount_financed) / parseFloat(this.state.sale_price)})
+                                ${this.state.amount_down} ({(parseInt(this.state.amount_down) / parseFloat(this.state.sale_price) * 100).toFixed()}%)
                             </span>
                         </p>
                     </div>
                     <div>
-                        <p>
-                            Interest rate:{' '}
-                            <span>
-                                {this.state.interest_rate}
-                            </span>
-                        </p>
                         <input
                             type="number"
                             name="interest_rate"
                             onChange={this.onChange}
                             step='0.1'
                             value={this.state.interest_rate}
-                        />
-                    </div>
-                    <div>
+                        />%
                         <p>
-                            Length of loan:{' '}
+                            Interest rate:{' '}
                             <span>
-                                {this.state.num_years}
+                                {this.state.interest_rate}%
                             </span>
                         </p>
+                    </div>
+                    <div>
                         <form>
                             <select value={this.state.num_years} onChange={this.onChange} name="num_years">
                                 <option value="15">15</option>
                                 <option value="30">30</option>
                             </select>
                         </form>
+                        <p>
+                            Length of loan:{' '}
+                            <span>
+                                {this.state.num_years} years
+                            </span>
+                        </p>
                     </div>
                     <div>
                         <p>
                             Monthly payment:{' '}
                             <span>
-                                {this.state.monthly_payment}
+                                ${this.state.monthly_payment.toFixed(2)}
                             </span>
                         </p>
                     </div>

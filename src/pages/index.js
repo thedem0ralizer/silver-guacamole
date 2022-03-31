@@ -27,7 +27,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-      <Link to={"mortgage-calc"}>here
+      <Link to={"mortgage-calc"}>Mortgage Calculator
       </Link>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
