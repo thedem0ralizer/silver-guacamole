@@ -32,10 +32,10 @@ export class MortgageCalculator extends Component {
 
     render () {
         return (
-            <div>
+            <center>
                 <h3>Mortgage Calculator</h3>
-                <div>
-                    <div>
+                <div id='inputs-list'>
+                    <div className="input-item">
                         <input
                             name="sale_price"
                             type='range'
@@ -52,7 +52,7 @@ export class MortgageCalculator extends Component {
                             </span>
                         </p>
                     </div>
-                    <div>
+                    <div className="input-item">
                         <input
                             name="amount_down"
                             type='range'
@@ -69,7 +69,7 @@ export class MortgageCalculator extends Component {
                             </span>
                         </p>
                     </div>
-                    <div>
+                    <div className="input-item">
                         <input
                             type="number"
                             name="interest_rate"
@@ -84,7 +84,7 @@ export class MortgageCalculator extends Component {
                             </span>
                         </p>
                     </div>
-                    <div>
+                    <div className="input-item">
                         <form>
                             <select value={this.state.num_years} onChange={this.onChange} name="num_years">
                                 <option value="15">15</option>
@@ -98,7 +98,7 @@ export class MortgageCalculator extends Component {
                             </span>
                         </p>
                     </div>
-                    <div>
+                    <div className="input-item">
                         <p>
                             Monthly payment:{' '}
                             <span>
@@ -107,7 +107,7 @@ export class MortgageCalculator extends Component {
                         </p>
                     </div>
                 </div>
-            </div>
+            </center>
         )
     }
 }
