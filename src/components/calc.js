@@ -18,7 +18,11 @@ export class MortgageCalculator extends Component {
         console.log(`onChange`)
         console.log(event)
         event.preventDefault()
+        const rate = this.state.interest_rate / 1200
+        const num_payments = this.state.num_years * 12
+        const payment = this.state.amount_financed * ( rate * (1 + rate) ** num_payments ) / ( (1 + rate) ** num_payments - 1 )
         this.setState({
+            monthly_payment: payment,
             amount_financed: this.state.sale_price - this.state.amount_down,
             [event.target.name]: event.target.value
         })
